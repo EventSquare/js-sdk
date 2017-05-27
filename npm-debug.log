@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/willemstaels/Documents/Code/eventsquare/labs/esjs',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/willemstaels/.npm/eventsquare/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/willemstaels/.npm correctMkdir not in flight; initializing
+10 info lifecycle eventsquare@0.0.1~prepublish: eventsquare@0.0.1
+11 silly lifecycle eventsquare@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/willemstaels/.npm/eventsquare/0.0.1/package.tgz',
+12 verbose tar pack   '/Users/willemstaels/Documents/Code/eventsquare/labs/esjs' ]
+13 verbose tarball /Users/willemstaels/.npm/eventsquare/0.0.1/package.tgz
+14 verbose folder /Users/willemstaels/Documents/Code/eventsquare/labs/esjs
+15 verbose addLocalTarball adding from inside cache /Users/willemstaels/.npm/eventsquare/0.0.1/package.tgz
+16 verbose correctMkdir /Users/willemstaels/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd eventsquare@0.0.1
+18 verbose afterAdd /Users/willemstaels/.npm/eventsquare/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/willemstaels/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/willemstaels/.npm/eventsquare/0.0.1/package/package.json written
+21 silly publish { name: 'eventsquare',
+21 silly publish   version: '0.0.1',
+21 silly publish   description: 'Start an EventSquare store in Javascript',
+21 silly publish   homepage: 'https://eventsquare.io',
+21 silly publish   author:
+21 silly publish    { name: 'EventSquare',
+21 silly publish      email: 'hello@eventsquare.io',
+21 silly publish      url: 'https://github.com/EventSquare' },
+21 silly publish   main: './eventsquare.js',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/EventSquare/js-sdk.git' },
+21 silly publish   bugs: { url: 'https://github.com/EventSquare/js-sdk/issues' },
+21 silly publish   license: 'MIT',
+21 silly publish   scripts: { test: 'node tests/connect.js' },
+21 silly publish   dependencies: { unirest: '^0.5.1' },
+21 silly publish   devDependencies: { dotenv: '^4.0.0' },
+21 silly publish   readme: '# EventSquare Javascript SDK\n\nSoon available.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '9f84b8a3738596f2d9a6b2de1c53d7d177db29ac',
+21 silly publish   _id: 'eventsquare@0.0.1',
+21 silly publish   _shasum: '4a8a1dfbf7bc323824282f241800be61f5b6ca71',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name eventsquare
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'eventsquare',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'eventsquare',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/eventsquare
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/willemstaels/.npm/eventsquare/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/eventsquare
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:24:40
+33 verbose request using bearer token for auth
+34 verbose request id 291b917b7cff6509
+35 http request PUT https://registry.npmjs.org/eventsquare
+36 http 403 https://registry.npmjs.org/eventsquare
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sat, 27 May 2017 10:24:37 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-ams4443-AMS',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1495880676.370341,VS0,VE1195',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/willemstaels/.npm/registry.npmjs.org/eventsquare on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : eventsquare
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid eventsquare
+43 verbose cwd /Users/willemstaels/Documents/Code/eventsquare/labs/esjs
+44 error Darwin 16.5.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.2.0
+47 error npm  v3.8.9
+48 error code E403
+49 error "You cannot publish over the previously published version 0.0.1." : eventsquare
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
