@@ -1,0 +1,25 @@
+{
+  "name": "eventsquare",
+  "version": "0.0.1",
+  "description": "Start an EventSquare store in Javascript",
+  "homepage": "https://eventsquare.io",
+  "author": "EventSquare <hello@eventsquare.io> (https://github.com/EventSquare)",
+  "main": "./eventsquare.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EventSquare/js-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EventSquare/js-sdk/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "node tests/connect.js"
+  },
+  "dependencies": {
+    "unirest": "^0.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
