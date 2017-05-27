@@ -1,3 +1,3 @@
-#EventSquare Javascript SDK
+# EventSquare Javascript SDK
 
-Coming soon.
+Soon available.
