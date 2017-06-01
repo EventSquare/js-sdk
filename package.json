@@ -1,6 +1,6 @@
 {
   "name": "eventsquare",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Start an EventSquare store in Javascript",
   "homepage": "https://eventsquare.io",
   "author": "EventSquare <hello@eventsquare.io> (https://github.com/EventSquare)",
