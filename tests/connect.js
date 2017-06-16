@@ -17,35 +17,38 @@ EventSquare.store("kerstmagie/wea2nmitludc",{
         console.error(err);
         return;
     }
+
     console.log('Succesfully connected and created a cart (' + store.cart.cartid + ')');
 
-    //Get available types
-    var store_types = (EventSquare.helpers.list(store));
+    //Check for shows
+    if(store.channel.shows && store.channel.shows.length){
 
-    console.log('There are ' + store_types.length + ' types available in this store.');
-
-    if(store_types.length){
-
-        console.log('Trying to add the first type (' + store_types[0].id + ') to the cart');
-
-        //Add items to cart
-
-        var request = {
-            quantity: 1
-        }
-
-        EventSquare.updateType(store.cart.cartid,store_types[0].id ,request,function(err,cart){
-
+        EventSquare.show("kerstmagie/wea2nmitludc/o7gtaqudmx2j/" + store.channel.shows[0].id,{
+            language: 'nl',
+        },function(err,show){
             if(err){
                 console.error(err);
                 return;
             }
-            console.log('Succesfully added to the cart');
-            loadCart(store);
-
         });
-
     }
+
+    //Add items to cart
+
+    // var request = {
+    //     quantity: 1
+    // }
+    //
+    // EventSquare.updateType(store.cart.cartid,store_types[0].id ,request,function(err,cart){
+    //
+    //     if(err){
+    //         console.error(err);
+    //         return;
+    //     }
+    //     console.log('Succesfully added to the cart');
+    //     loadCart(store);
+    //
+    // });
 
 });
 
